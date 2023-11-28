@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  #description {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .county {
+    stroke: #fff;
+  }
+
+  #legend {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .legend-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  #tooltip {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+  }

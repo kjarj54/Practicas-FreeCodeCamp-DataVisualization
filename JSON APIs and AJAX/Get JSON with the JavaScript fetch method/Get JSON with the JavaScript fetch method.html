@@ -1,15 +1,17 @@
 <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      document.getElementById('getMessage').onclick = function(){
+    document.addEventListener('DOMContentLoaded',function(){
+      document.getElementById('getMessage').onclick= () => {
         // Add your code below this line
-        document.getElementsByClassName('message')[0].textContent="Here is the message";
-  
+  fetch('/json/cats.json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('message').innerHTML = JSON.stringify(data);
+    })
   
         // Add your code above this line
-      }
+      };
     });
   </script>
-  
   <style>
     body {
       text-align: center;
@@ -36,9 +38,8 @@
       border: 1px solid #0F5897;
     }
   </style>
-  
   <h1>Cat Photo Finder</h1>
-  <p class="message box">
+  <p id="message" class="box">
     The message will go here
   </p>
   <p>

@@ -1,0 +1,23 @@
+#title, #description {
+    text-align: center;
+  }
+
+  #tooltip {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .legend {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .legend rect {
+    width: 20px;
+    height: 20px;
+  }

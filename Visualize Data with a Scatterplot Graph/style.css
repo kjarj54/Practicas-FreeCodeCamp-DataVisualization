@@ -1,0 +1,19 @@
+/* styles.css */
+#chart-container {
+    margin: 50px;
+  }
+  .dot {
+    fill: steelblue;
+    stroke: #fff;
+    stroke-width: 2px;
+  }
+  .tooltip {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
